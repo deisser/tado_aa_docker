@@ -1,0 +1,8 @@
+version: "3"
+services:
+  tado_aa:
+    restart: always
+    container_name: tado_aa
+    image: saschabrockel/tado_aa:latest
+    env_file:
+      - ./tado.env
